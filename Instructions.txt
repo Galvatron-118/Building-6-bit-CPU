@@ -1,0 +1,6 @@
+       JMP-JG:     ADD R1,5 -> 0b01010100010100000 (Immediate Mode)
+       JMP-TO:     ADD R2,3 -> 0b01011000001100000 (Immediate Mode)
+                   JMP JMP-TO -> 0b10000010000000000 (Jump Mode: JMPLABEL)
+                   JG JMP-JG ->  0b10010000000000000 (Jump Mode: JG LABEL)
+                   OR R1,R2 -> 0b00000110000000000 (Register Mode)
+                   ROL R1, 1 ->  0b01100100000100000 (Immediate Mode)
